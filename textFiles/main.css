@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+.headerItem{
+    display: inline-block;
+}
+
+nav {
+    background-color: #999999; 
+}
+
+nav ul{
+    display: flex; 
+    justify-content: space-evenly;
+
+}
+
+nav ul li {
+    list-style: none;    
+    display: inline-block; 
+}
+p {
+    line-height: 25px;
+}
+
+h1 {
+    margin-left: 40px; 
+}
+h3 {
+    text-align: center; 
+}
+
+.stateCapsContainer {
+    text-align: center; 
+}
+
+.contactMeContainer{
+    text-align: center;
+}
+
+.projectsContainer {
+    background-color: #999999; 
+}
+
+@media(max-width: 500px){
+    nav {
+        padding: 15px; 
+    }
+
+    nav ul{
+        display: block; 
+    }
+
+    nav ul li {   
+        display: block; 
+        line-height: 30px; 
+    }
+
+    header img{
+        width: 150px; 
+        height: 150px; 
+    }
+
+
+}
