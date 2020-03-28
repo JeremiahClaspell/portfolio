@@ -6,19 +6,17 @@
     display: inline-block;
 }
 
-nav {
-    background-color: #999999; 
+header p {
+    display: inline-block; 
 }
 
-nav ul{
-    display: flex; 
-    justify-content: space-evenly;
-
+nav {
+    background-color: #999999; 
+    padding: 15px; 
 }
 
 nav ul li {
-    list-style: none;    
-    display: inline-block; 
+    list-style: none;  
 }
 p {
     line-height: 25px;
@@ -43,24 +41,27 @@ h3 {
     background-color: #999999; 
 }
 
-@media(max-width: 520px){
+@media (min-width: 500px){
+
     nav {
-        padding: 15px; 
+        padding: 5px; 
     }
 
-    nav ul{
-        display: block; 
+    nav ul {
+        display: flex; 
+        justify-content: space-evenly;
     }
-
-    nav ul li {   
-        display: block; 
-        line-height: 30px; 
+    nav ul li {
+        display: inline; 
     }
-
-    header img{
-        width: 150px; 
-        height: 150px; 
+    .stateCapsContainer {
+        display: flex; 
+        flex-direction: row-reverse; 
+        justify-content: flex-end; 
     }
-
+    .stateCapsContainer div {
+        display: inline-block; 
+    }
 
 }
+
