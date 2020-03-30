@@ -6,20 +6,31 @@
     display: inline-block;
 }
 
+h1 {
+    font-family: 'Caveat', cursive;
+    font-size: 30px; 
+}
+
 header p {
     display: inline-block; 
 }
 
 nav {
-    background-color: #999999; 
+    background-color: #3282b8; 
     padding: 15px; 
+    font-size: 16px; 
+    font-family: sans-serif; 
+    line-height: 24px; 
 }
 
 nav ul li {
     list-style: none;  
 }
 p {
-    line-height: 25px;
+    line-height: 22px;
+    font-family: 'Muli', sans-serif;
+    font-size: 18px; 
+    padding: 10px; 
 }
 
 h1 {
@@ -27,6 +38,17 @@ h1 {
 }
 h3 {
     text-align: center; 
+    font-family: 'Amaranth', sans-serif;
+    background-color: #bbe1fa; 
+    padding: 15px; 
+    font-size: 25px; 
+}
+
+h4 {
+    font-size: 22px; 
+    font-family: 'Muli', sans-serif;
+    text-decoration: underline;
+
 }
 
 .stateCapsContainer {
