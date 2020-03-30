@@ -11,26 +11,77 @@ h1 {
     font-size: 30px; 
 }
 
+.mainScreen, .mainBioContainer, .projectsContainer, .contactMe {
+    min-height: 100vh;  
+}
+
+.contactMe {
+    min-height: 85vh; 
+}
+
+footer {
+    min-height: 15vh; 
+}
+
+.mainScreen header {
+    height: 30vh; 
+}
+
+.mainScreen nav {
+    height: 30vh; 
+}
+
+.titleContainer {
+    height: 40vh;  
+}
+
+header {
+    margin-bottom: 20px; 
+}
+
 header p {
     display: inline-block; 
 }
 
 nav {
-    background-color: #3282b8; 
+    background-color: #bbe1fa; 
     padding: 15px; 
     font-size: 16px; 
     font-family: sans-serif; 
     line-height: 24px; 
+    width: 100%; 
+    margin-top: 20px; 
+    z-index: 1;
+}
+
+nav ul {
+    padding: 0px; 
 }
 
 nav ul li {
     list-style: none;  
+    text-decoration: none; 
 }
+
+nav ul li a {
+    text-decoration: none;
+    color: black; 
+}
+
+.myPic {
+    width: 75px; 
+    height: 75px; 
+    border-radius: 50%;
+    vertical-align: bottom;
+    margin-top: 20px;  
+}
+
 p {
     line-height: 22px;
     font-family: 'Muli', sans-serif;
     font-size: 18px; 
     padding: 10px; 
+    z-index: 0; 
 }
 
 h1 {
@@ -39,7 +90,8 @@ h1 {
 h3 {
     text-align: center; 
     font-family: 'Amaranth', sans-serif;
-    background-color: #bbe1fa; 
+    background-color: #1b262c; 
+    color: white; 
     padding: 15px; 
     font-size: 25px; 
 }
@@ -59,14 +111,30 @@ h4 {
     text-align: center;
 }
 
-.projectsContainer {
-    background-color: #999999; 
+.projectPic {
+    width: 90%; 
+    max-height: 90vh; 
+}
+
+.techIcon {
+    max-width: 20%; 
+}
+
+footer {
+    text-align: center; 
+}
+
+#backToTop {
+    text-decoration: none; 
+    color: black; 
+    vertical-align: bottom;
 }
 
 @media (min-width: 500px){
 
     nav {
         padding: 5px; 
+        text-align: center; 
     }
 
     nav ul {
@@ -85,5 +153,77 @@ h4 {
         display: inline-block; 
     }
 
+    .technologiesUsed {
+        width: 200px; 
+    }
+
+    .projectPic {
+        width: 50%; 
+    }
+
+    .projectTextContainer , .projectScreenshot {
+        margin: auto; 
+    }
+
 }
 
+@media(min-width: 750px){
+    header , nav {
+        position: absolute; 
+    }
+
+    header {
+        height: 500px; 
+        top: 0px; 
+    }
+    
+    nav {
+        top: 100px; 
+        margin-top: 0px; 
+    }
+
+    .titleContainer {
+        margin-top: 200px; 
+    }
+
+    .spacer {
+        height: 40px; 
+    }
+
+    .titleContainer {
+        height: auto; 
+    }
+
+    .mainBioContainer {
+        background-image: url("../portfolio_images/coloradoBackgroundImage.jpg"); 
+        background-size: 100vw;
+        background-position: top;
+    }
+
+    .bioContainer {
+        background-color: #f1f3f4; 
+        background-repeat: no-repeat; 
+        background-size: 100vw; 
+        opacity: 90%; 
+        width: 75%; 
+        margin: auto;
+        margin-top: 10%;  
+        padding: 15px; 
+    }
+
+    .contactMe {
+        background-image: url("../portfolio_images/contact-us-background.jpg");
+        background-size: 100vw; 
+    }
+
+    .contactInfo {
+        background-color: #f1f3f4; 
+        background-repeat: no-repeat; 
+        background-size: 100vw; 
+        opacity: 85%; 
+        width: 40%; 
+        margin: auto;
+        margin-top: 10%;  
+        padding: 15px; 
+    }
+}

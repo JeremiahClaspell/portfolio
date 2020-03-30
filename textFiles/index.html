@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name</title>
+    <title>Jeremiah Claspell</title>
     <link href="main.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
@@ -11,52 +11,74 @@
     <link href="https://fonts.googleapis.com/css?family=Amaranth&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <p>Picture here</p>
-        <img>
-        <h1 class="headerItem">Name</h1>
+        <header id="header">
+            <img src="../portfolio_images/Jeremiah.jpg" class="myPic" alt="Jeremiah Claspell">
+            <h1 class="headerItem">Jeremiah Claspell</h1>
 
-    </header>
-    <nav>
-        <ul>
-            <li>Biography</li>
-            <li>Projects</li>
-            <li>Contact Info</li>
-        </ul>
-    </nav>
-    <div class="titleContainer">
-        <p>Title here</p>
-    </div>
-    <div class="MainBioContainer">
-        <div class="BioContainer">
-            <h3>Biography</h3>
-            <p>Bio text is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</p>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li><a href="#mainBioContainer">Biography</a></li>
+                <li><a href="#projectsContainer">Projects</a></li>
+                <li><a href="#contactMe">Contact Me</a></li>
+            </ul>
+        </nav>
+        <div class="titleContainer">
+            <p>Hi, I'm Jeremiah and I enjoy back end problem solving.</p>
+        </div>
+    <div class="spacer" id="mainBioContainer"></div>
+    <div class="mainBioContainer">
+        <h3>Biography</h3>
+        <div class="bioContainer">
+            <p>I am a web developer that has worked primarily on connecting online retail stores 
+                with any number of external applications such as connecting their website with an order 
+                management system or web based financial apps. I enjoy this field because of my passion 
+                toward learning new skills, and online retailers specifically are very aggressive towards
+                making their website as leading edge as possible which requires me to constantly learn 
+                new skills to make that possible. <br><br>
+                When I am not working, I can usually be found outside somewhere in my home state of Colorado. Because of 
+                my passion for learning new skills, I spend a lot of my time trying almost any outdoor recreational activity 
+                that I can, whether it be fishing, disc golf, rafting, hockey, softball, or any number of activities that Colorado
+                has to offer. </p>
         </div>
     </div>
+    <div class="spacer" id="projectsContainer"></div>
     <div class="projectsContainer">
         <h3>Projects</h3>
         <div class="stateCapsContainer">
             <div class="projectScreenshot">
-                <p>Project screenshot here</p>
-                <img>
+                <img src="../portfolio_images/webapp_screenshots/Screen Shot 2020-03-26 at 8.34.48 AM.png" class="projectPic" alt="state capitals quiz">
             </div>
             <div class="projectTextContainer">
-                <h4>Project Title</h4>
-                <p>Project Description</p>
+                <h4>The State Capitals Quiz</h4>
+                <p>This app was designed to test your knowledge of the state capitals.</p>
+                <p><a href="https://jeremiahclaspell.github.io/quizApp/" target="_blank">Live app</a></p>
+                <p><a href="https://github.com/JeremiahClaspell/quizApp" target="_blank">Repo</a></p>
                 <div class="technologiesUsed">
-                    <p>technologies used logos here:</p>
-                    <img>
-                    <img>
-                    <img>
+                    <img src="../portfolio_images/tech icons/html.png" class="techIcon" alt="html">
+                    <img src="../portfolio_images/tech icons/css.png" class="techIcon" alt="css">
+                    <img src="../portfolio_images/tech icons/js.png" class="techIcon" alt="javaScript">
+                    <img src="../portfolio_images/tech icons/github.png" class="techIcon" alt="Github">
                 </div>
             </div>
         </div>
     </div>
-    <div>
+    <div class="spacer" id="contactMe"></div>
+    <div class="contactMe">
         <h3>Contact Me</h3>
         <div class="contactMeContainer">
-            <p>Email:</p>
+            <div class="contactInfo">
+                <p>Email: JeremiahClaspell@gmail.com</p>
+                <p>Phone: 719-334-7177</p>
+                <p><a href="https://github.com/JeremiahClaspell" target="_blank">Github</a></p>
+                <p><a href="https://www.linkedin.com/in/jeremiah-c-7a1915121/">LinkedIn</a></p>
+            </div>
         </div>
     </div>
+    <footer>
+        <a href="#header" id="backToTop">Back to Top</a>
+    </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="index.js" type="text/javascript"></script>
 </html>
